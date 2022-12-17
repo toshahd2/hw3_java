@@ -41,6 +41,9 @@ public class hw3 {
         stringList.remove(3);
         System.out.println(Arrays.toString(stringList.toArray()));
 
-
+        //7. Поиска элемента в списке по строке.
+        System.out.println("\nЗадание 7");
+        int indexOfElement = stringList.indexOf("Этот элемент лучше");
+        System.out.println("Индекс искомого элемента: " + indexOfElement);
     }
 }
