@@ -28,7 +28,19 @@ public class hw3 {
 
         //4. Извлечь элемент (по указанному индексу) из заданного списка.
         System.out.println("\nЗадание 4");
-        String extractedElement = stringList.remove(2);
+        String extractedElement = stringList.get(2);
         System.out.println(extractedElement);
+
+        //5. Обновить определенный элемент списка по заданному индексу.
+        System.out.println("\nЗадание 5");
+        stringList.set(1, "Этот элемент лучше");
+        System.out.println(Arrays.toString(stringList.toArray()));
+
+        //6. Удалить третий элемент из списка.
+        System.out.println("\nЗадание 6");
+        stringList.remove(3);
+        System.out.println(Arrays.toString(stringList.toArray()));
+
+
     }
 }
