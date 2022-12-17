@@ -52,5 +52,10 @@ public class hw3 {
         newStringList.addAll(stringList.subList(1,3));
         System.out.println(Arrays.toString(newStringList.toArray()));
 
+        //9. Удалить из первого списка все элементы отсутствующие во втором списке.
+        System.out.println("\nЗадание 9");
+        stringList.retainAll(newStringList);
+        System.out.println(Arrays.toString(stringList.toArray()));
+
     }
 }
