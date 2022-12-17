@@ -45,5 +45,12 @@ public class hw3 {
         System.out.println("\nЗадание 7");
         int indexOfElement = stringList.indexOf("Этот элемент лучше");
         System.out.println("Индекс искомого элемента: " + indexOfElement);
+
+        //8. Создать новый список и добавить в него несколько элементов первого списка.
+        System.out.println("\nЗадание 8");
+        ArrayList<String> newStringList = new ArrayList<>();
+        newStringList.addAll(stringList.subList(1,3));
+        System.out.println(Arrays.toString(newStringList.toArray()));
+
     }
 }
